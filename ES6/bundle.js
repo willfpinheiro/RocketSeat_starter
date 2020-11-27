@@ -235,4 +235,9 @@ var usuarioSpread2 = _objectSpread(_objectSpread({}, usuarioSpread), {}, {
   nomeUsuario: 'Pedrinho'
 });
 
-console.log(usuarioSpread2);
+console.log(usuarioSpread2); // Templates Literals
+// Forma de incluir variaveis dentro de strings com o ES6
+
+var nomeLiterais = 'Will';
+var idadeLiterais = 23;
+console.log("{Meu nome \xE9 ".concat(nomeLiterais, " e tenho ").concat(idadeLiterais, " anos}"));

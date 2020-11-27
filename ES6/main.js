@@ -165,3 +165,11 @@ const usuarioSpread = {
 const usuarioSpread2 = { ...usuarioSpread, nomeUsuario: 'Pedrinho' };
 
 console.log(usuarioSpread2);
+
+// Templates Literals
+// Forma de incluir variaveis dentro de strings com o ES6
+
+const nomeLiterais = 'Will';
+const idadeLiterais = 23;
+
+console.log(`{Meu nome é ${nomeLiterais} e tenho ${idadeLiterais} anos}`);
