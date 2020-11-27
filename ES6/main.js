@@ -1,3 +1,5 @@
+import { somaWebPack } from './funcoes';
+
 class List {
 	constructor() {
 		this.data = [];
@@ -173,3 +175,17 @@ const nomeLiterais = 'Will';
 const idadeLiterais = 23;
 
 console.log(`{Meu nome é ${nomeLiterais} e tenho ${idadeLiterais} anos}`);
+
+// Object Short Syntax
+
+const nomeSS = 'Will';
+const idadeSS = 23;
+
+const usuarioSS = {
+	nomeSS,
+	idadeSS,
+	empresa: 'Impactus',
+};
+
+// WebPack
+console.log(somaWebPack(100, 200));

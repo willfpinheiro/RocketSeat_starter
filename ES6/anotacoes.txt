@@ -20,3 +20,15 @@ mas caso queira colcoar const a = {nome: 'diago' }, se atribuir a.nome = 'will',
 
 let so funciona dentro do scopo, se tentar usar a variavel fora, não será possivel
 
+
+Iniciando webpack - 
+--- Serve para fazer um roda de coleta entre arquivos js e jogalos todos para o arquivo main que esta sendo executado
+necessario instalar
+yarn add webpack webpack-cli -D
+yard add babel babel-loader -D
+-d pois foi modificado o package.jason para desenvolvimento
+
+ "scripts": {
+    "dev": "webpack --mode=development -w"
+  }
+  modificado o dev para rodar agora atravez do webpak adicionado recentemente 
