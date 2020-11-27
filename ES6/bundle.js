@@ -44,12 +44,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun
   !*** ./subtracao.js ***!
   \**********************/
 /*! namespace exports */
-/*! export subdDfault [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"subdDfault\": () => /* binding */ subdDfault\n/* harmony export */ });\n// export defult, é quando um arquivo js conterm somente uma função.\nfunction subdDfault(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack://ES6/./subtracao.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => /* binding */ subdDfault\n/* harmony export */ });\n// export defult, é quando um arquivo js contem somente uma função.\nfunction subdDfault(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack://ES6/./subtracao.js?");
 
 /***/ })
 

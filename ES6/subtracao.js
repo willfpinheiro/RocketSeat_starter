@@ -1,5 +1,5 @@
-// export defult, é quando um arquivo js conterm somente uma função.
+// export defult, é quando um arquivo js contem somente uma função.
 
-export function subdDfault(a, b) {
+export default function subdDfault(a, b) {
 	return a - b;
 }
