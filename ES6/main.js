@@ -112,9 +112,9 @@ function mostraNome2({ nome, idade }) {
 
 mostraNome2(desestruturacao);
 
-// Operadores Rest/Spread
+// Operadores Rest
 // instalar yarn add @babel/plugin-proposal-object-rest-spread
-// Serve para pegar o resto das propriedades
+// Serve para pegar o resto das propriedades  de um array
 
 const usuarioRest = {
 	nomeUsuario: 'Will',
@@ -129,3 +129,39 @@ const { nomeUsuario, ...resto } = usuarioRest;
 
 console.log(nomeUsuario);
 console.log(resto);
+
+const arrRest = [1, 2, 3, 4];
+
+const [x, y, ...z] = arrRest;
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+function somaRest(...params) {
+	return params.reduce((total, next) => total + next);
+}
+
+console.log(somaRest(1, 50, 3));
+
+// Operador Spread
+// Serve para repassar as informações de um array para outra estrutura de dados
+// ex1
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+
+console.log(arr3);
+// ex2
+const usuarioSpread = {
+	nomeUsuario: 'Will',
+	idade: 26,
+	endereco: {
+		cidade: 'Belém',
+		estado: 'PA',
+	},
+};
+
+const usuarioSpread2 = { ...usuarioSpread, nomeUsuario: 'Pedrinho' };
+
+console.log(usuarioSpread2);
