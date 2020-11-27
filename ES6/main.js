@@ -1,4 +1,5 @@
-import { somaWebPack } from './funcoes';
+import SomaImportada, { subWebPack as subtracaoImportada } from './funcoes';
+import subdDfault from './subtracao';
 
 class List {
 	constructor() {
@@ -188,4 +189,8 @@ const usuarioSS = {
 };
 
 // WebPack
-console.log(somaWebPack(100, 200));
+console.log(SomaImportada(100, 200));
+console.log(subtracaoImportada(100, 200));
+console.log(subdDfault(100, 200));
+
+// Funçoes

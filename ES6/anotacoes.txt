@@ -32,3 +32,5 @@ yard add babel babel-loader -D
     "dev": "webpack --mode=development -w"
   }
   modificado o dev para rodar agora atravez do webpak adicionado recentemente 
+
+  // export defult, é quando um arquivo js conterm somente uma função. dessa forma, na importação nao é preciso colocar as {}
