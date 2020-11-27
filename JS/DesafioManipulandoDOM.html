@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="novoQuadrado" id="1" onclick="newSquare()">Criar novo quadrado</button>
+    <input id="names" type="text">
+    <button onclick='inserirNames()'>Inserir Nomes</button>
+    <script>
+        // Desafio 1 e 2
+        var ide = 0;
+        function setId() {
+            ide += 1;
+            return ide;
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+
+        }
+        var newColor = getRandomColor();
+
+        function newSquare() {
+            var newSquare = document.createElement('div')
+            newSquare.setAttribute('id', "a" + setId())
+            newSquare.style.width = '100%';
+            newSquare.style.height = '100px';
+            newSquare.style.backgroundColor = getRandomColor();
+            var containerElement = document.querySelector('body');
+            containerElement.appendChild(newSquare);
+            newSquare.addEventListener('mouseenter', (event) => {
+                event.target.style.backgroundColor = getRandomColor();
+            })
+        }
+
+        // desafio 3 e 4
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        function creatList() {
+            var newList = document.createElement('div')
+            var newListConteudo = document.createElement('ul')
+            newListConteudo.setAttribute('id', 'ListOfNames')
+            newList.appendChild(newListConteudo)
+
+
+            for (const value of nomes) {
+                let newLine = document.createElement('li')
+                let newItem = document.createTextNode(value)
+                newLine.appendChild(newItem)
+                newListConteudo.appendChild(newLine)
+            }
+
+            var containerElement = document.querySelector('body')
+            containerElement.appendChild(newList)
+
+        }
+        function inserirNames() {
+            var List = document.querySelector('#ListOfNames')
+            let newLine = document.createElement('li')
+            let name = document.querySelector('#names')
+            let newItem = document.createTextNode(name.value)
+            name.value = ''
+            newLine.appendChild(newItem)
+            List.appendChild(newLine)
+        }
+
+        creatList();
+    </script>
+</body>
+
+</html>

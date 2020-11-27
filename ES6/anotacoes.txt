@@ -1,0 +1,22 @@
+iniciar yarn em um projeto 
+yarn init
+
+adicionar babel a um projeto front
+yarn add @babel/cli
+yarn add @babel/preset-env
+yarn add @babel/core
+
+
+"scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+- Gera um script que conver todo codigo feito em main.js para bundle.js onde é intendivel pelo navegador.
+- D -w serve para ficar monitorando as modificações e nao precisar ficar chamando o script novamente 
+
+const vs var vs let
+const não pode ter seu valor reatribuido, dado um valor, não pode mudar esse valor
+const = a nunca podera ser const = b
+mas caso queira colcoar const a = {nome: 'diago' }, se atribuir a.nome = 'will', dará certo
+
+let so funciona dentro do scopo, se tentar usar a variavel fora, não será possivel
+

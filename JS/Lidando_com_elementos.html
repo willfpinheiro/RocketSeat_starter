@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input id="nome">
+        <div class="box"></div>
+    </div>
+    <script>
+        // cria o link a
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://www.google.com');
+        linkElement.setAttribute('title', 'Site do google');
+
+        var textElement = document.createTextNode('Acessando o site do goole');
+
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        // remove o input que esta selecionando
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
+
+        // aleterando estilos
+        var boxElement = document.querySelector('.box')
+
+        boxElement.style.width = '100px';
+        boxElement.style.height = '100px';
+        boxElement.style.backgroundColor = '#f00';
+
+
+    </script>
+</body>
+
+</html>
