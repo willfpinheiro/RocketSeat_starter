@@ -1,5 +1,6 @@
 import SomaImportada, { subWebPack as subtracaoImportada } from './funcoes';
 import subdDfault from './subtracao';
+import axios from 'axios';
 
 class List {
 	constructor() {
@@ -217,3 +218,18 @@ const executaPromisse = async () => {
 };
 
 executaPromisse();
+
+// axios
+class Api {
+	static async getUserInfo(username) {
+		try {
+			const response = await axios.get(`https://api.github.com/users/${username}`);
+			console.log(response);
+		} catch (err) {
+			console.log('Erro na api');
+		}
+	}
+}
+
+Api.getUserInfo('willfpinheiro');
+Api.getUserInfo('willfpinheirasdasdo');

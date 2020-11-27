@@ -53,3 +53,7 @@ e colocar no webpack:
 @babel/polyfill
 
 obs: so posso usar wait em uma função que foi previamente descrita como async
+
+
+// axios
+yarn add axios
